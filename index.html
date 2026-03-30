@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TODO: Remplacer le titre par ton nom complet -->
+    <title>Portfolio - Thomas Coly | BTS SIO SISR</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- TODO: Ajouter un favicon avec <link rel="icon" href="assets/favicon.ico"> -->
+</head>
+<body>
+    <!-- Particules animées en arrière-plan -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <!-- TODO: Remplacer les initiales par les tiennes -->
+                <span class="logo-text">&lt;TC/&gt;</span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="nav-link active">Accueil</a></li>
+                <li><a href="bts.html" class="nav-link">Le BTS SIO</a></li>
+                <li><a href="cv.html" class="nav-link">CV</a></li>
+                <li><a href="stages.html" class="nav-link">Stages</a></li>
+                <li><a href="competences.html" class="nav-link">Compétences</a></li>
+                <li><a href="veille.html" class="nav-link">Veille</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">Bonjour, je suis</p>
+                <!-- TODO: Remplacer par ton prénom et nom -->
+                <h1 class="hero-name glitch" data-text="Thomas Coly">Thomas Coly</h1>
+                <div class="typing-wrapper">
+                    <span class="hero-title" id="typing-text"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <!-- TODO: Remplacer par ta propre description -->
+                <p class="hero-description">
+                    Étudiant en BTS SIO option SISR, je me forme à l'administration des infrastructures réseau et aux fondamentaux de la cybersécurité. Mon objectif est de mettre en pratique mes connaissances théoriques pour apprendre à maintenir des systèmes fiables et sécurisés au sein d'un environnement professionnel.
+                </p>
+                <div class="hero-buttons">
+                    <a href="competences.html" class="btn btn-primary">
+                        <span class="btn-icon">&#9881;</span> Mes Projets
+                    </a>
+                    <a href="contact.html" class="btn btn-outline">
+                        <span class="btn-icon">&#9993;</span> Me Contacter
+                    </a>
+                </div>
+                <div class="hero-social">
+                    <!-- TODO: Remplacer # par tes vrais liens -->
+                    <a href="#" class="social-link" title="LinkedIn" target="_blank">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286m_open
+                            zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" title="GitHub" target="_blank">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="terminal-title">terminal@portfolio</span>
+                    </div>
+                    <div class="terminal-body" id="terminal-body">
+                        <div class="terminal-line">
+                            <span class="prompt">$</span>
+                            <span class="command">whoami</span>
+                        </div>
+                        <!-- TODO: Remplacer les infos du terminal -->
+                        <div class="terminal-line output">Thomas Coly - Étudiant BTS SIO SISR</div>
+                        <div class="terminal-line">
+                            <span class="prompt">$</span>
+                            <span class="command">cat skills.txt</span>
+                        </div>
+                        <div class="terminal-line output">Réseau | Systèmes | Sécurité | Virtualisation</div>
+                        <div class="terminal-line">
+                            <span class="prompt">$</span>
+                            <span class="command">ping passion</span>
+                        </div>
+                        <div class="terminal-line output">64 bytes: Cybersécurité, Infrastructure, Linux</div>
+                        <div class="terminal-line">
+                            <span class="prompt">$</span>
+                            <span class="command typing-cmd" id="terminal-typing"></span>
+                            <span class="cursor terminal-cursor">_</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- Stats rapides -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card" data-count="2">
+                    <div class="stat-number">0</div>
+                    <!-- TODO: Ajuster le nombre d'années -->
+                    <div class="stat-label">Années de formation</div>
+                </div>
+                <div class="stat-card" data-count="2">
+                    <div class="stat-number">0</div>
+                    <!-- TODO: Ajuster le nombre de projets -->
+                    <div class="stat-label">Projets réalisés</div>
+                </div>
+                <div class="stat-card" data-count="2">
+                    <div class="stat-number">0</div>
+                    <!-- TODO: Ajuster le nombre de stages -->
+                    <div class="stat-label">Stages effectués</div>
+                </div>
+                <div class="stat-card" data-count="4">
+                    <div class="stat-number">0</div>
+                    <!-- TODO: Ajuster le nombre de certifications -->
+                    <div class="stat-label">Certifications</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Aperçu rapide -->
+    <section class="preview-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-decoration">//</span> Aperçu rapide
+            </h2>
+            <div class="preview-grid">
+                <a href="competences.html" class="preview-card">
+                    <div class="preview-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3>Compétences & Projets</h3>
+                    <p>Infrastructure réseau, virtualisation, sécurité et bien plus.</p>
+                    <span class="preview-link">Explorer &rarr;</span>
+                </a>
+                <a href="stages.html" class="preview-card">
+                    <div class="preview-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                    </div>
+                    <h3>Expériences</h3>
+                    <p>Mes stages en entreprise et les missions réalisées.</p>
+                    <span class="preview-link">Découvrir &rarr;</span>
+                </a>
+                <a href="veille.html" class="preview-card">
+                    <div class="preview-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="11" cy="11" r="8"/>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                        </svg>
+                    </div>
+                    <h3>Veille Technologique</h3>
+                    <p>Ma veille sur les tendances IT et la cybersécurité.</p>
+                    <span class="preview-link">Lire &rarr;</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <!-- TODO: Remplacer les initiales -->
+                    <span class="logo-text">&lt;TC/&gt;</span>
+                    <p>Portfolio BTS SIO SISR</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Accueil</a>
+                    <a href="bts.html">BTS SIO</a>
+                    <a href="cv.html">CV</a>
+                    <a href="stages.html">Stages</a>
+                    <a href="competences.html">Compétences</a>
+                    <a href="veille.html">Veille</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <!-- TODO: Remplacer # par tes vrais liens -->
+                    <a href="#" target="_blank" title="LinkedIn">LinkedIn</a>
+                    <a href="https://github.com/Th4567ms" target="_blank" title="GitHub">GitHub</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <!-- TODO: Remplacer le nom et l'année -->
+                <p>&copy; 2025 Thomas Coly. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

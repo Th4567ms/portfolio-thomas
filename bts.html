@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TODO: Remplacer le titre par ton nom -->
+    <title>Le BTS SIO - Thomas Coly</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-text">&lt;TC/&gt;</span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="bts.html" class="nav-link active">Le BTS SIO</a></li>
+                <li><a href="cv.html" class="nav-link">CV</a></li>
+                <li><a href="stages.html" class="nav-link">Stages</a></li>
+                <li><a href="competences.html" class="nav-link">Compétences</a></li>
+                <li><a href="veille.html" class="nav-link">Veille</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Accueil</a>
+                <span>/</span>
+                <span>Le BTS SIO</span>
+            </div>
+            <h1>Le BTS SIO</h1>
+            <p>Services Informatiques aux Organisations — Tout savoir sur cette formation et l'option SISR</p>
+        </div>
+    </header>
+
+    <!-- Contenu -->
+    <section class="page-content">
+        <div class="container">
+            <!-- Présentation générale -->
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c6 3 6 3 12 0v-5"/></svg>
+                        Qu'est-ce que le BTS SIO ?
+                    </h3>
+                    <p>
+                        Le <strong>BTS Services Informatiques aux Organisations</strong> est un diplôme d'État de niveau Bac+2
+                        qui forme des professionnels capables de répondre aux besoins informatiques des entreprises.
+                        La formation dure 2 ans et se compose de cours théoriques, travaux pratiques et stages en entreprise.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                        Organisation de la formation
+                    </h3>
+                    <p>
+                        La formation s'articule autour d'un tronc commun et d'une spécialisation choisie dès la première année.
+                        Elle inclut des modules généraux (culture générale, mathématiques, anglais) et des modules techniques
+                        spécifiques à l'informatique.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        Les deux options
+                    </h3>
+                    <ul>
+                        <li><strong>SLAM</strong> — Solutions Logicielles et Applications Métiers : développement d'applications, programmation, bases de données</li>
+                        <li><strong>SISR</strong> — Solutions d'Infrastructure, Systèmes et Réseaux : administration réseau, systèmes, cybersécurité</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                        Épreuves de l'examen
+                    </h3>
+                    <ul>
+                        <li>Épreuve E1 : Culture générale et expression</li>
+                        <li>Épreuve E2 : Expression et communication en anglais</li>
+                        <li>Épreuve E3 : Mathématiques pour l'informatique</li>
+                        <li>Épreuve E4 : Support et mise à disposition de services informatiques</li>
+                        <li>Épreuve E5 : Administration des systèmes et réseaux (SISR)</li>
+                        <li>Épreuve E6 : Cybersécurité</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Option SISR en détail -->
+            <div class="info-grid" style="margin-top: 2rem;">
+                <div class="info-card option-highlight">
+                    <h3>
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+                        Mon option : SISR — Solutions d'Infrastructure, Systèmes et Réseaux
+                    </h3>
+                    <p>
+                        L'option SISR forme des techniciens capables de <strong>gérer et administrer le réseau d'une organisation</strong>,
+                        d'installer et configurer des serveurs, de mettre en place des solutions de virtualisation
+                        et d'assurer la cybersécurité des infrastructures.
+                    </p>
+                    <p style="margin-top: 1rem;">Les compétences développées en SISR couvrent :</p>
+                    <ul style="margin-top: 0.75rem;">
+                        <li>Administration des systèmes (Windows Server, Linux)</li>
+                        <li>Configuration réseau (routage, switching, VLAN, VPN)</li>
+                        <li>Virtualisation (VMware, Proxmox, Hyper-V)</li>
+                        <li>Services réseau (DHCP, DNS, Active Directory, GPO)</li>
+                        <li>Cybersécurité (pare-feu, IDS/IPS, PKI, supervision)</li>
+                        <li>Scripting et automatisation (PowerShell, Bash)</li>
+                        
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Tableau comparatif -->
+            <h2 class="section-title" style="margin-top: 3rem;">
+                <span class="title-decoration">//</span> Comparaison SLAM vs SISR
+            </h2>
+            <div style="overflow-x: auto;">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Critère</th>
+                            <th>SLAM</th>
+                            <th>SISR</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Domaine principal</td>
+                            <td>Développement logiciel</td>
+                            <td>Infrastructure & Réseaux</td>
+                        </tr>
+                        <tr>
+                            <td>Technologies</td>
+                            <td>Java, PHP, Python, SQL, HTML/CSS</td>
+                            <td>Cisco, Windows Server, Linux, VMware</td>
+                        </tr>
+                        <tr>
+                            <td>Métiers visés</td>
+                            <td>Développeur, intégrateur web</td>
+                            <td>Admin réseau, technicien systèmes</td>
+                        </tr>
+                        <tr class="highlight-row">
+                            <td>Mon choix</td>
+                            <td>—</td>
+                            <td>SISR &#10003;</td>
+                        </tr>
+                        <tr>
+                            <td>Poursuites d'études</td>
+                            <td>Licence pro dev, école d'ingénieur</td>
+                            <td>Licence pro réseau, école d'ingénieur</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Pourquoi le BTS SIO -->
+            <h2 class="section-title" style="margin-top: 3rem;">
+                <span class="title-decoration">//</span> Pourquoi j'ai choisi le BTS SIO SISR
+            </h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        Ma motivation
+                    </h3>
+                    <!-- TODO: Remplacer par tes propres motivations -->
+                    <p>
+                        Mon intérêt pour l'informatique a commencé au collège, par simple curiosité pour le fonctionnement des ordinateurs. Après un Bac STMG option SIG, j'ai choisi le BTS SIO SISR car c'est une formation concrète qui permet de comprendre comment on bâtit et on sécurise un réseau d'entreprise. Aujourd'hui, ce cursus m'apporte les bases techniques nécessaires pour évoluer dans ce secteur, tout en me laissant l'opportunité de découvrir les réalités du métier sur le terrain.
+                    </p>
+                        
+
+                </div>
+                <div class="info-card">
+                    <h3>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+                        Mes objectifs
+                    </h3>
+                    <!-- TODO: Remplacer par tes propres objectifs -->
+                    <p>
+                        Mon projet après le BTS est d'intégrer une formation en alternance (Bac+3) pour confronter mes acquis théoriques à la réalité du terrain. Je suis particulièrement intéressé par l'évolution des infrastructures réseau et la sécurité, et je souhaite utiliser cette année supplémentaire pour choisir la spécialisation qui me correspondra le mieux
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">&lt;TC/&gt;</span>
+                    <p>Portfolio BTS SIO SISR</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Accueil</a>
+                    <a href="bts.html">BTS SIO</a>
+                    <a href="cv.html">CV</a>
+                    <a href="stages.html">Stages</a>
+                    <a href="competences.html">Compétences</a>
+                    <a href="veille.html">Veille</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" target="_blank">LinkedIn</a>
+                    <a href="#" target="_blank">GitHub</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Thomas Coly. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

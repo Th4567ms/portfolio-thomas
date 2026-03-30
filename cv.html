@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TODO: Remplacer le titre par ton nom -->
+    <title>Mon CV - Thomas Coly</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-text">&lt;TC/&gt;</span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="bts.html" class="nav-link">Le BTS SIO</a></li>
+                <li><a href="cv.html" class="nav-link active">CV</a></li>
+                <li><a href="stages.html" class="nav-link">Stages</a></li>
+                <li><a href="competences.html" class="nav-link">Compétences</a></li>
+                <li><a href="veille.html" class="nav-link">Veille</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Header -->
+  <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Accueil</a>
+                <span>/</span>
+                <span>Mon CV</span>
+            </div>
+            <h1>Mon CV</h1>
+            <p>Téléchargez mon curriculum vitae et découvrez mon parcours</p>
+        </div>
+    </header>
+
+    <!-- Contenu -->
+    <section class="page-content">
+        <div class="container">
+            <div class="cv-container">
+                <div class="cv-preview">
+                    <div class="cv-icon"></div>
+                    <!-- TODO: Remplacer par ton nom -->
+                    <h3>CV — Thomas Coly</h3>
+                    <p>Étudiant BTS SIO option SISR — Promotion 2023-2025</p>
+
+                    <div class="cv-info">
+                        <div class="cv-info-item">
+                            <span class="info-icon">&#128100;</span>
+                            <div>
+                                <div class="info-label">Nom complet</div>
+                                <!-- TODO: Remplacer par ton nom -->
+                                <div class="info-value">Thomas Coly</div>
+                            </div>
+                        </div>
+                        <div class="cv-info-item">
+                            <span class="info-icon">&#127891;</span>
+                            <div>
+                                <div class="info-label">Formation</div>
+                                <div class="info-value">BTS SIO option SISR</div>
+                            </div>
+                        </div>
+                        <div class="cv-info-item">
+                            <span class="info-icon">&#128205;</span>
+                            <div>
+                                <div class="info-label">Localisation</div>
+                                <!-- TODO: Remplacer par ta ville -->
+                                <div class="info-value">Paris, France</div>
+                            </div>
+                        </div>
+                        <div class="cv-info-item">
+                            <span class="info-icon">&#128231;</span>
+                            <div>
+                                <div class="info-label">Email</div>
+                                <!-- TODO: Remplacer par ton email -->
+                                <div class="info-value">coly.thomas.sio@gmail.com</div>
+                            </div>
+                        </div>
+                        <div class="cv-info-item">
+                            <span class="info-icon">&#128197;</span>
+                            <div>
+                                <div class="info-label">Promotion</div>
+                                <!-- TODO: Remplacer par ta promotion -->
+                                <div class="info-value">2023 - 2025</div>
+                            </div>
+                        </div>
+                        <div class="cv-info-item">
+                            <span class="info-icon">&#127760;</span>
+                            <div>
+                                <div class="info-label">Langues</div>
+                                <!-- TODO: Remplacer par tes langues -->
+                                <div class="info-value">Français (natif), Anglais (B1), Italien (A1) </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TODO: Remplacer le href par le chemin vers ton vrai CV PDF dans le dossier assets/ -->
+                    <a href="assets/Cv-TH.pdf" class="cv-download-btn" download>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                            <polyline points="7 10 12 15 17 10" />
+                            <line x1="12" y1="15" x2="12" y2="3" />
+                        </svg>
+                        Vizualiser mon CV (pdf)
+                    </a>
+                </div>
+
+                <!-- Résumé du parcours -->
+                <div style="width: 100%; max-width: 800px; margin-top: 3rem;">
+                    <h2 class="section-title">
+                        <span class="title-decoration">//</span> Parcours résumé
+                    </h2>
+                    <div class="info-grid" style="grid-template-columns: 1fr;">
+                        <div class="info-card">
+                            <h3>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                                    <path d="M6 12v5c6 3 6 3 12 0v-5" />
+                                </svg>
+                                Formation
+                            </h3>
+                            <ul>
+                                <!-- TODO: Remplacer par tes vraies formations -->
+                                <li><strong>2024 - 2026</strong> — BTS SIO option SISR, Lycée Voillaume, Aulnay-sous-Bois, 93600</li>
+                                <li><strong>2023-2024</strong> — Baccalauréat Technologie STMG (sciences
+et technologies du management) Option SIG (Systèmes d'information et de gestion)
+et de la gestion, Lycée Auguste Blanqui, Saint-Ouen sur Seine, 93400
+</li>
+                          <div class="info-card">
+    <h3>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+        </svg>
+        Certifications
+    </h3>
+
+    <div class="certifications-list" style="display: flex; flex-direction: column; gap: 10px;">
+
+        <div class="certif-item" onclick="this.classList.toggle('active')">
+            <div class="certif-header">
+                <span>Certification Pix (SIO)</span>
+                <span class="chevron">▼</span>
+            </div>
+            <div class="certif-details">
+                <div class="certif-content">
+                    <p style="color: #aaa; margin-bottom: 15px;">Niveau 5 — Certification de l'autonomie sur les outils numériques, la protection des données personnelles et la prévention des risques liés à la cybersécurité.</p>
+                    <div style="display: flex; flex-direction: column; gap: 8px;">
+                        <a href="assets/certification-pix-SIO.pdf" target="_blank" style="color: #007bff; text-decoration: none;">📄 Voir Certificat SIO</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="certif-item" onclick="this.classList.toggle('active')">
+            <div class="certif-header">
+                <span>Atelier RGPD (CNIL)</span>
+                <span class="chevron">▼</span>
+            </div>
+            <div class="certif-details">
+                <div class="certif-content">
+                    <p style="color: #aaa; margin-bottom: 15px;">Maîtrise des principes fondamentaux du RGPD : protection de la vie privée et sécurisation des données.</p>
+                    <a href="assets/Certificat RGP.pdf" target="_blank" style="color: #007bff; text-decoration: none;">📄 Voir Certificat RGPD</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="certif-item" onclick="this.classList.toggle('active')">
+            <div class="certif-header">
+                <span>Certificat AFP Google News Initiative</span>
+                <span class="chevron">▼</span>
+            </div>
+            <div class="certif-details">
+                <div class="certif-content">
+                    <p style="color: #aaa; margin-bottom: 15px;">Formation aux techniques d'investigation numérique : vérification des sources et lutte contre la désinformation.</p>
+                    <a href="assets/Certificat AFP Google News Initiative.png" target="_blank" style="color: #007bff; text-decoration: none;">📄 Voir Certificat AFP</a>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="certif-item" onclick="this.classList.toggle('active')">
+    <div class="certif-header" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+        <span>Attestation Sens Cyber</span>
+        <span class="chevron">▼</span>
+    </div>
+    <div class="certif-details">
+        <div class="certif-content">
+            <p style="color: #aaa; margin-bottom: 15px;">
+                Maîtrise des fondamentaux de la sécurité numérique : protection de l'environnement de travail, sécurisation des données personnelles et détection proactive des cybermenaces.
+            </p>
+            <a href="assets/Attestation Sens Cyber.pdf"target="_blank" style="color: #007bff; text-decoration: none;">📄 Voir l'attestation</a>
+        </div>
+    </div>
+</div>
+       
+
+
+
+    
+            
+        
+    
+                        </div>
+                        <div class="info-card">
+                            <h3>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                                </svg>
+                                Centres d'intérêt
+                            </h3>
+                            <ul>
+                                <!-- TODO: Remplacer par tes vrais centres d'intérêt -->
+                                <li>Jeu vidéo</li>
+                                <li>Sport : Football</li>
+                                <li>Veille technologique IT</li>
+                                <li>Voyages & Culture</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">&lt;TC/&gt;</span>
+                    <p>Portfolio BTS SIO SISR</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Accueil</a>
+                    <a href="bts.html">BTS SIO</a>
+                    <a href="cv.html">CV</a>
+                    <a href="stages.html">Stages</a>
+                    <a href="competences.html">Compétences</a>
+                    <a href="veille.html">Veille</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" target="_blank">LinkedIn</a>
+                    <a href="#" target="_blank">GitHub</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Thomas Coly. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

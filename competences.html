@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TODO: Remplacer le titre par ton nom -->
+    <title>Compétences & Projets - Thomas Coly</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-text">&lt;TC/&gt;</span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="bts.html" class="nav-link">Le BTS SIO</a></li>
+                <li><a href="cv.html" class="nav-link">CV</a></li>
+                <li><a href="stages.html" class="nav-link">Stages</a></li>
+                <li><a href="competences.html" class="nav-link active">Compétences</a></li>
+                <li><a href="veille.html" class="nav-link">Veille</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Accueil</a>
+                <span>/</span>
+                <span>Compétences & Projets</span>
+            </div>
+            <h1>Compétences & Projets</h1>
+            <p>Mes compétences techniques acquises en BTS SIO SISR et les projets réalisés</p>
+        </div>
+    </header>
+
+    <!-- Contenu -->
+    <section class="page-content">
+        <div class="container">
+
+            <!-- Compétences Réseau -->
+            <div class="skills-section">
+                <h3>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+                    Réseaux & Infrastructure (5)
+                </h3>
+                <div class="skills-grid">
+                    <!-- TODO: Ajuster les niveaux (data-width) selon tes vraies compétences -->
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Cisco (Routage & Switching)</span>
+                            <span class="skill-level">Scolaire</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                        <p class="skill-description">Déploiement d'architectures commutées via VLAN et Trunking, administration du routage dynamique OSPF et sécurisation des flux réseau par la mise en œuvre d'ACL.</p>
+                        <a href="assets/OSPF_2.3.11_Coly_Thomas.pdf" class="skill-btn" download>📄 TP OSPF DR/BDR</a>
+                        <a href="assets/2025-10-14_TP4.3_Coly_Thomas.pdf" class="skill-btn" download>📄 TP VLAN & Trunk</a>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">TCP/IP & Protocoles</span>
+                            <span class="skill-level">Scolaire</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
+                        <p class="skill-description">Compréhension du modèle OSI et des protocoles réseau essentiels (DHCP, DNS, HTTP, FTP, SSH). Expertise dans la configuration des services réseau et la sécurisation des communications.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Pare-feu & VPN</span>
+                            <span class="skill-level">Scolaire</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="70"></div>
+                        </div>
+                        <p class="skill-description">Déploiement et administration de pfSense pour la protection des réseaux. Maîtrise de la création de règles de filtrage et de la gestion du trafic réseau.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Analyse réseau (SNMP/Wireshark)</span>
+                            <span class="skill-level">Scolaire</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="65"></div>
+                        </div>
+                        <p class="skill-description">Sécurisation d'un serveur DHCP pour empêcher les Rogues DHCP. Analyse réseau et troubleshooting avec outils professionnels.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Configuration d'adressage IP</span>
+                            <span class="skill-level">Scolaire</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
+                        <p class="skill-description">Configuration d'adresses IP sur postes et serveurs selon un plan d'adressage structuré.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Compétences Systèmes -->
+            <div class="skills-section">
+                <h3>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--cyan)" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    Systèmes & Serveurs (7)
+                </h3>
+                <div class="skills-grid">
+                    <!-- TODO: Ajuster les niveaux selon tes vraies compétences -->
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Windows Server</span>
+                            <span class="skill-level">Scolaire</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
+                        <p class="skill-description">Administration de serveurs Windows Server, gestion des utilisateurs et infrastructure réseau.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Linux (Debian/Ubuntu)</span>
+                            <span class="skill-level">Scolaire</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="75"></div>
+                        </div>
+                        <p class="skill-description">Administration système Linux, gestion des services et configuration réseau.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Virtualisation</span>
+                            <span class="skill-level">Scolaire</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="75"></div>
+                        </div>
+                        <p class="skill-description">VMware VirtualBox</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Serveur Web & BDD (Apache/Nginx/MySQL)</span>
+                            <span class="skill-level">Scolaire</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="70"></div>
+                        </div>
+                        <p class="skill-description">Installation et configuration d'un serveur web (Apache/Nginx), FTP et MySQL sous Debian 13.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Sauvegarde & Récupération</span>
+                            <span class="skill-level">Scolaire</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="65"></div>
+                        </div>
+                        <p class="skill-description">Mise en place de sauvegardes et restaurations sous Debian. Différenciel de dossiers avec chiffrement PGP et surveillance avec Nessus.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Veille technologique (GREEN IT)</span>
+                            <span class="skill-level">Scolaire</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="60"></div>
+                        </div>
+                        <p class="skill-description">Suivi des évolutions en informatique durable et des technologies écologiques.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Compétences Sécurité -->
+            <div class="skills-section">
+                <h3>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--red)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    Cybersécurité
+                </h3>
+                <div class="skills-grid">
+                    <!-- TODO: Ajuster les niveaux selon tes vraies compétences -->
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Sécurité réseau</span>
+                            <span class="skill-level">Scolaire</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="70"></div>
+                        </div>
+                        <p class="skill-description">Protéger l'infrastructure via un pare-feu (filtrage) et des sondes IDS/IPS (détection/prévention d'intrusions). Segmentation et DMZ pour isoler les flux critiques et limiter la propagation d'attaques.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Analyse réseau (CyberOps)</span>
+                            <span class="skill-level">Scolaire</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="45"></div>
+                        </div>
+                        <p class="skill-description">Utilisation d'environnements de cybersécurité pour analyser des trames réseau.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Scripting</span>
+                            <span class="skill-level">Stage</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="60"></div>
+                        </div>
+                        <p class="skill-description">Maîtrise de PowerShell et Bash pour l'automatisation de tâches administratives. Création de scripts pour le déploiement, la maintenance et la gestion du parc informatique.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Compétences Développement Web -->
+            <div class="skills-section">
+                <h3>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="2"><path d="M16 18l2-4m0 0l2-4m-2 4l-2-4m2 4l2 4M8 18l-2-4m0 0l-2-4m2 4l2-4m-2 4l-2 4M12 2L3 7v10c0 5.55 4 10.74 9 12 5-1.26 9-6.45 9-12V7l-9-5z"/></svg>
+                    Développement Web (2)
+                </h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">HTML / CSS portfolio</span>
+                            <span class="skill-level">Scolaire & Personnel</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="70"></div>
+                        </div>
+                        <p class="skill-description">Création et intégration d'un site web vitrine (portfolio) en respectant les standards du web et les meilleures pratiques. Conception responsive et optimisation pour tous les navigateurs.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Intégration de fonctionnalités</span>
+                            <span class="skill-level">Personnel</span>
+                        </div>
+                      
+            
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="50"></div>
+                        </div>
+                        <p class="skill-description">Vérification du bon fonctionnement du site sur différents navigateurs et correction des anomalies.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Compétences Administration & Gestion d'Identités -->
+            <div class="skills-section">
+                <h3>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    Administration & Gestion d'Identités (3)
+                </h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Active Directory (AD)</span>
+                            <span class="skill-level">Stage & Personnel</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                        <p class="skill-description">Gestion courante des comptes utilisateurs et des droits d'accès au sein du domaine.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Tanium</span>
+                            <span class="skill-level">Stage</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="70"></div>
+                        </div>
+                        <p class="skill-description">Audit du parc informatique, cybersécurité et suivi des actifs.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Installation d'un contrôleur de domaine</span>
+                            <span class="skill-level">Stage</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                        <p class="skill-description">Installation et configuration d'un contrôleur de domaine sous Windows Server avec gestion courante.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Compétences Déploiement & Système -->
+            <div class="skills-section">
+                <h3>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--orange)" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    Déploiement & Système (4)
+                </h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Windows 10 / 11</span>
+                            <span class="skill-level">Stage & Scolaire</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
+                        <p class="skill-description">Installation, migration et configuration logicielle pour les utilisateurs.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">BIOS / UEFI</span>
+                            <span class="skill-level">Stage</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="75"></div>
+                        </div>
+                        <p class="skill-description">Configuration technique, activation du boot PXE et résolution de blocages.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">BitLocker</span>
+                            <span class="skill-level">Stage & Scolaire
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="70"></div>
+                        </div>
+                        <p class="skill-description">Mise en œuvre et vérification du chiffrement des disques pour la sécurité.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">CMD / Diskpart</span>
+                            <span class="skill-level">Stage & Scolaire</span>
+                            
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="65"></div>
+                        </div>
+                        <p class="skill-description">Maintenance système et gestion des partitions via lignes de commande.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Compétences Support & Gestion de Parc (ITSM) -->
+            <div class="skills-section">
+                <h3>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="2"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+                    Support & Gestion de Parc (ITSM) (3)
+                </h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">EasyVista</span>
+                            <span class="skill-level">Stage</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="70"></div>
+                        </div>
+                        <p class="skill-description">Gestion des tickets d'incidents (SML) et mise à jour du référentiel matériel.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">GLPI</span>
+                            <span class="skill-level">Scolaire</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="65"></div>
+                        </div>
+                        <p class="skill-description">Gestion et résolution de tickets d'incidents via cet outil de helpdesk.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Gestion de Projet contexte GLPI</span>
+                            <span class="skill-level">Scolaire</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="70"></div>
+                        </div>
+                        <p class="skill-description">Gestion de parc informatique et projets d'infrastructure avec GLPI et mise à jour du référentiel matériel.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Compétences Réseau & Connectivité -->
+            <div class="skills-section">
+                <h3>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--pink)" stroke-width="2"><circle cx="12" cy="12" r="1"/><path d="M12 1v6M12 17v6M4.22 4.22l4.24 4.24M15.54 15.54l4.24 4.24M1 12h6M17 12h6M4.22 19.78l4.24-4.24M15.54 8.46l4.24-4.24"/></svg>
+                    Réseau & Connectivité (2)
+                </h3>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">Clients VPN</span>
+                            <span class="skill-level">Stage</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="70"></div>
+                        </div>
+                        <p class="skill-description">Installation manuelle et troubleshooting des accès distants sécurisés.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <span class="skill-name">PXE (Preboot Execution Environment)</span>
+                            <span class="skill-level">Stage</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="75"></div>
+                        </div>
+                        <p class="skill-description">Masterisation et déploiement d'images système via le réseau.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projets -->
+            <h2 class="section-title" style="margin-top: 4rem;">
+                <span class="title-decoration">//</span> Projets réalisés
+            </h2>
+
+            <div class="projects-grid">
+                <!-- TODO: Remplacer par tes vrais projets -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <span class="project-image-placeholder">&#128274;</span>
+                    </div>
+                    <div class="project-body">
+                        <h4>Infrastructure Active Directory & GPO (GSB)</h4>
+                        <p>
+                            Architecture d'un domaine Windows Server : segmentation par OU, gestion des droits d'accès et déploiement de scripts de démarrage pour l'optimisation de l'environnement utilisateur.
+                        </p>
+                        
+                       <div class="project-links">
+    <a href="assets/GSB – Piste de travail sur Active Directory-2.pdf" target="_blank">Documentation &rarr;</a>
+</div>
+                    </div>
+                </div>
+
+               <div class="project-card">
+    <div class="project-image-placeholder" style="background-color: #2a2a3a; height: 200px; display: flex; align-items: center; justify-content: center; border-radius: 12px 12px 0 0;">
+        <img src="assets/Win11.png" alt="Windows 11" style="width: 400px; opacity: 0.6;"> 
+    </div>
+
+    <div class="project-content" style="padding: 20px;">
+        <h3 style="color: #fff; margin-bottom: 10px; font-size: 1.2rem;">Migration et Déploiement Windows 11</h3>
+        
+        <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.9rem; line-height: 1.6; margin-bottom: 20px;">
+            Pilotage de la migration d'un parc de 74 postes : préparation du matériel (BIOS/TPM), 
+            <strong>masterisation via PXE</strong> et intégration au domaine Active Directory. 
+            Optimisation du cycle de déploiement en collaboration avec Thomas et Mohamed et Prince.
+        </p>
+
+        <div class="project-links">
+            <a href="assets/Projet Win 11.png" target="_blank" style="color: #9d7aff; text-decoration: none; font-weight: 500; display: flex; align-items: center; gap: 5px;">
+                Documentation <span>&rarr;</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+                
+                            
+                  
+            
